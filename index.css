@@ -133,3 +133,6 @@ body nav { margin: 0; }
   body nav { margin: 0; }
   body .bg-image-container { height: 26.5vh; }
 }
+@media (max-width:480px){
+  body .bg-image-container { height: 23.5vh; }
+}
