@@ -137,4 +137,5 @@ body nav { margin: 0; }
 @media (max-width:480px){
   body .bg-image-container { height: 23.5vh; }
   .sub-container .two{  height:230px;}
+  .sub-container .three { height: 210px; }
 }
