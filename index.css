@@ -10,6 +10,7 @@ body{ padding: 0; margin: 0; background: #f5f5f5;overflow-x: hidden; }
 ul{ display: flex; justify-content: flex-end;}
 li{ list-style-type:none; margin: 1rem; font-style: italic; }
 li,.image-box p { color: #fff; }
+.nav-content li a { text-decoration: none; color: #fff; }
 nav {  width: 100%;height: auto; background: #585e645c; margin: -16px 0; }
 .left-li{ position: absolute; left: 10%; display: flex; top: 1.4%;}
 .left-li li { margin:0.2rem ;}
@@ -111,6 +112,16 @@ img {vertical-align: middle;}
 .active {
   color: white;
 }
+/* teachers page */
+.main-teachers-page { display: flex; flex-wrap: wrap;}
+.sub-content-teacher {flex: 0 0 50%; }
+.teacher-content { text-align: justify; width: 60%; margin: auto; box-shadow: 5px 5px 10px #888888; padding: 20px; letter-spacing: 0.5px;}
+ main { text-align: center; }
+.sub-content-teacher img { margin: 30px; border-radius: 50%; box-shadow: 5px 5px 10px #888888;transition: 0.70s;-webkit-transition: 0.70s;-moz-transition: 0.70s;-ms-transition: 0.70s;-o-transition: 0.70s; }
+.sub-content-teacher img:hover {  transition: 0.70s;-webkit-transition: 0.70s;-moz-transition: 0.70s;-ms-transition: 0.70s;-o-transition: 0.70s;-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);transform: rotate(180deg); }
+main .contact-info { margin-top: 40px; }
+.name {font-size: 20px;font-style: italic;font-weight: 600;opacity: 0.5;}
+
 /* Responsive CSS */
 @media (min-width:1200px){
   .topnav { display: none;}
@@ -120,6 +131,7 @@ img {vertical-align: middle;}
 body .info-main,.bg-image-container .bg-sub-contain { width: auto; }
 .nav-content { display: none; }
 body nav { margin: 0; }
+.teacher-content { width:80%; }
 }
 @media (max-width:580px) {
   .main,.info-main,.sub-content { flex-direction: column; }
@@ -133,6 +145,11 @@ body nav { margin: 0; }
   body nav { margin: 0; }
   body .bg-image-container { height: 26.5vh; }
   .sub-container .two{  height:250px;}
+  /*about teacher-page*/
+  .main-teachers-page { flex-direction: column; }
+  .teacher-content { font-size: 15px;}
+  .sub-content-teacher { margin: 15px; }
+  .teacher-content { width: auto; }
 }
 @media (max-width:480px){
   body .bg-image-container { height: 23.5vh; }
