@@ -11,7 +11,7 @@ ul{ display: flex; justify-content: flex-end;}
 li{ list-style-type:none; margin: 1rem; font-style: italic; }
 li,.image-box p { color: #fff; }
 nav {  width: 100%;height: auto; background: #585e645c; margin: -16px 0; }
-.left-li{ position: absolute; left: 10%; display: flex; top: 35%;}
+.left-li{ position: absolute; left: 10%; display: flex; top: 1.4%;}
 .left-li li { margin:0.2rem ;}
 .fa-cog,.fa-puzzle-piece,.fa-comments { text-align: center; font-size: 2.5rem !important; height: 5rem; line-height: 2 !important; width: 5rem; border-radius: 50%; background: #ff5501; color: #fff; display: block !important; margin: auto !important; }
 .fa-puzzle-piece:before { margin-left: 0.5rem; }
@@ -128,11 +128,13 @@ body nav { margin: 0; }
   .image-contain .image-box { margin: 10px; }
   .image-contain .image-box p { font-size: 10px; }
   .nav-content { display: none; }
-  .sub-container .content-box { height: 280px; }
+  .sub-container .content-box { height: 225px; }
   .sub-container .content-box p { font-size: 13px; }
   body nav { margin: 0; }
   body .bg-image-container { height: 26.5vh; }
+  .sub-container .two{  height:250px;}
 }
 @media (max-width:480px){
   body .bg-image-container { height: 23.5vh; }
+  .sub-container .two{  height:230px;}
 }
