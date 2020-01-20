@@ -79,6 +79,7 @@ img {vertical-align: middle;}
 .prev, .next,.text {font-size: 11px}
 }
 .topnav {
+  display: none;
   overflow: hidden;
   background-color: #333;
   position: relative;
@@ -114,13 +115,17 @@ img {vertical-align: middle;}
 }
 /* teachers page */
 .main-teachers-page { display: flex; flex-wrap: wrap;}
-.sub-content-teacher {flex: 0 0 50%; }
-.teacher-content { text-align: justify; width: 60%; margin: auto; box-shadow: 5px 5px 10px #888888; padding: 20px; letter-spacing: 0.5px;}
+.sub-content-teacher {flex: 0 0 25%; }
+.teacher-content { text-align: justify; width: 80%; margin: auto; box-shadow: 5px 5px 10px #888888; padding: 20px; letter-spacing: 0.5px;}
  main { text-align: center; }
 .sub-content-teacher img { margin: 30px; border-radius: 50%; box-shadow: 5px 5px 10px #888888;transition: 0.70s;-webkit-transition: 0.70s;-moz-transition: 0.70s;-ms-transition: 0.70s;-o-transition: 0.70s; }
 .sub-content-teacher img:hover {  transition: 0.70s;-webkit-transition: 0.70s;-moz-transition: 0.70s;-ms-transition: 0.70s;-o-transition: 0.70s;-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);transform: rotate(180deg); }
 main .contact-info { margin-top: 40px; }
 .name {font-size: 20px;font-style: italic;font-weight: 600;opacity: 0.5;}
+/* about page*/
+.about-container { text-align: center; margin: 20px; }
+.about-img { width: 90vw; height:50vh; }
+.about-content { text-align: justify; font-family: sans-serif; letter-spacing: 0.5px; margin-top: 20px; }
 
 /* Responsive CSS */
 @media (min-width:1200px){
@@ -131,7 +136,9 @@ main .contact-info { margin-top: 40px; }
 body .info-main,.bg-image-container .bg-sub-contain { width: auto; }
 .nav-content { display: none; }
 body nav { margin: 0; }
+.topnav { display: block; }
 .teacher-content { width:80%; }
+.sub-content-teacher { flex:0 0 50%; }
 }
 @media (max-width:580px) {
   .main,.info-main,.sub-content { flex-direction: column; }
@@ -145,6 +152,7 @@ body nav { margin: 0; }
   body nav { margin: 0; }
   body .bg-image-container { height: 26.5vh; }
   .sub-container .two{  height:250px;}
+  .topnav { display: block; }
   /*about teacher-page*/
   .main-teachers-page { flex-direction: column; }
   .teacher-content { font-size: 15px;}

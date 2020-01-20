@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/b54fc44c83.js" crossorigin="anonymous"></script>
+  <title>About</title>
+</head>
+<body>
+<nav>
+    <div class="left-li">
+      <li class="fa fa-gear"></li>
+      <li>Pilates</li>
+    </div>
+    <ul class="nav-content">
+      <li><a href="index2.html" target="blank" >Teachers</a></li>
+      <li><a href="index3.html" target="blank" >About</a></li>
+      <li>Contact Us</li>
+    </ul>
+    <div class="topnav">
+        <a href="#home" class="active">Pilates</a>
+        <div id="myLinks">
+          <a href="index.html">Home</a>
+          <a href="index2.html">Teachers</a>
+          <a href="index3.html">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+  </nav>
+  <div class="about-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQKwCqi44GImB5_9sFsOInXGfLd9RrxALzMrdmAcyBbPlbJB6Nig&s" class="about-img">
+    <p class="about-content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat interdum magna vel volutpat. Vivamus libero est, sagittis et nunc ut, volutpat aliquet diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet est eros, at varius erat eleifend in. Suspendisse suscipit sem justo, vitae scelerisque risus congue a. Nulla tempus lacinia egestas. Vestibulum ultrices mauris sem, vitae tempor urna placerat ac. Cras sollicitudin et lacus vitae aliquet. Cras laoreet feugiat odio quis porttitor. Phasellus tempus nisi ac pretium euismod.
+      Curabitur lacinia sem in hendrerit commodo. Aenean tristique scelerisque sollicitudin. Nullam vel aliquam tellus. Suspendisse dictum egestas purus ornare lobortis. Nam sit amet lectus eget lectus varius aliquet. Maecenas velit dui, egestas ut diam eget, commodo tincidunt purus. Nullam nec malesuada arcu. Nulla volutpat augue id mi iaculis, rhoncus convallis diam facilisis. Phasellus id leo a dolor ullamcorper bibendum. Nulla placerat, diam et cursus hendrerit, dui ex pulvinar erat, vitae varius massa elit ac eros. Nunc dapibus tortor eu arcu sollicitudin vehicula. Morbi arcu nisi, elementum id dui non, auctor bibendum purus. Pellentesque luctus in ligula eget fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget elementum dui. Etiam non ipsum id ante lacinia placerat a eget dui.
+      Aenean non congue massa. Phasellus feugiat egestas risus, eget egestas ipsum accumsan eu. Maecenas pharetra convallis est in consequat. Mauris fermentum neque lacus, sit amet facilisis sapien auctor eu. Morbi euismod volutpat purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In nec ultricies nisi. Fusce pharetra ut dolor at scelerisque. Sed et condimentum ante, vel finibus arcu. Nullam non porttitor dolor, in mollis lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean tincidunt ante sit amet eleifend tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ac tellus rhoncus, porttitor elit sed, convallis neque. Donec tempor, nunc vitae gravida vulputate, magna nulla condimentum lorem, a vehicula ex erat ac justo. Nunc ac scelerisque justo. Aliquam mollis egestas lectus ut vulputate. Aenean porttitor ullamcorper massa sit amet blandit. Morbi commodo ac sem egestas varius. Sed erat dui, efficitur ac libero in, pretium lobortis enim. Sed elementum hendrerit turpis, nec semper enim fringilla at. Donec tristique placerat congue. Praesent pharetra tempus metus, nec pellentesque est dictum eu. Maecenas neque metus, luctus a nulla sed, euismod malesuada tortor. Morbi sed molestie massa. Cras tincidunt luctus lorem in ornare.
+      Curabitur tempus lacinia laoreet. Morbi nec nibh vehicula, porttitor purus sed, fermentum augue. Aliquam laoreet nunc sit amet posuere sollicitudin. Vivamus consequat a nulla et molestie. Nulla posuere luctus enim, eu ullamcorper mi sollicitudin nec. Suspendisse gravida nulla sed ante iaculis, a rutrum lacus iaculis. Mauris non nibh in quam luctus vehicula sit amet sit amet ex.
+    </p>
+  </div>
+  <div class="contact-info" >
+      <p>8901 Mamora Road, Gurugram</p>
+      <p class="contact-number">1(800) 234 5678</p>
+      <p class="contact-mail">pilates@gmail.com</p>
+      </div>
+      <!--social links-->
+      <div class="social-icon-container">
+        <i class="fab fa-facebook-f icon"></i>
+        <i class="fab fa-twitter icon"></i>
+      </div>
+</body>
+<script>
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
+</html>
